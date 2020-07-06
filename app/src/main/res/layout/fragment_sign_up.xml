@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_normal">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/AuthLabel"
+        android:text="@string/sign_up_title_label"
+        android:textAppearance="@style/TextApp.AuthTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    First Name-->
+
+    <TextView
+        android:id="@+id/firstNameTextView"
+        style="@style/AuthLabel"
+        android:layout_marginTop="@dimen/margin_big"
+        android:text="@string/first_name_label"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+    <EditText
+        android:id="@+id/signUpFirstNameEditText"
+        style="@style/AuthEditText"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintBottom_toBottomOf="@id/firstNameTextView"
+        app:layout_constraintStart_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toTopOf="@id/firstNameTextView"
+        tools:text="Jon" />
+
+    <!--    Last Name-->
+
+    <TextView
+        android:id="@+id/lastNameTextView"
+        style="@style/AuthLabel"
+        android:text="@string/last_name_label"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toBottomOf="@id/firstNameTextView" />
+
+    <EditText
+        android:id="@+id/signUpLastNameEditText"
+        style="@style/AuthEditText"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintBottom_toBottomOf="@id/lastNameTextView"
+        app:layout_constraintStart_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toTopOf="@id/lastNameTextView"
+        tools:text="Doe" />
+
+    <!--    Phone Number-->
+
+    <TextView
+        android:id="@+id/phoneNumberTextView"
+        style="@style/AuthLabel"
+        android:text="@string/phone_number_label"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toBottomOf="@id/lastNameTextView" />
+
+    <EditText
+        android:id="@+id/signUpPhoneNumberEditText"
+        style="@style/AuthEditText"
+        android:inputType="phone"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintBottom_toBottomOf="@id/phoneNumberTextView"
+        app:layout_constraintStart_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toTopOf="@id/phoneNumberTextView"
+        tools:text="+7 666 55 44" />
+
+    <!--    Email Address -->
+
+    <TextView
+        android:id="@+id/emailTextView"
+        style="@style/AuthLabel"
+        android:text="@string/email_label"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toBottomOf="@id/phoneNumberTextView" />
+
+    <EditText
+        android:id="@+id/signUpEmailEditText"
+        style="@style/AuthEditText"
+        android:inputType="textEmailAddress"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintBottom_toBottomOf="@id/emailTextView"
+        app:layout_constraintStart_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toTopOf="@id/emailTextView"
+        tools:text="example@email.com" />
+
+    <!--    Passwod -->
+
+    <TextView
+        android:id="@+id/passwordTextView"
+        style="@style/AuthLabel"
+        android:text="@string/password_label"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toBottomOf="@id/emailTextView" />
+
+    <EditText
+        android:id="@+id/signUpPasswordEditText"
+        style="@style/AuthEditText"
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintBottom_toBottomOf="@id/passwordTextView"
+        app:layout_constraintStart_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toTopOf="@id/passwordTextView"
+        tools:text="password" />
+
+    <!--   Confirm Password -->
+
+    <TextView
+        android:id="@+id/confirmPasswordTextView"
+        style="@style/AuthLabel"
+        android:text="@string/confirm_password_label"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toBottomOf="@id/passwordTextView" />
+
+    <EditText
+        android:id="@+id/confirmPasswordTEditText"
+        style="@style/AuthEditText"
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintBottom_toBottomOf="@id/confirmPasswordTextView"
+        app:layout_constraintStart_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toTopOf="@id/confirmPasswordTextView"
+        tools:text="password" />
+
+    <!--   Gender -->
+
+    <TextView
+        android:id="@+id/genderTextView"
+        style="@style/AuthLabel"
+        android:text="@string/gender_male_label"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toBottomOf="@id/confirmPasswordTextView" />
+
+    <Switch
+        android:id="@+id/signUpMaleSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/half_margin_between_label_and_input"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintBottom_toBottomOf="@id/genderTextView"
+        app:layout_constraintStart_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toTopOf="@id/genderTextView" />
+
+    <!--   Date of birth -->
+
+    <TextView
+        android:id="@+id/dateOfBirthTextView"
+        style="@style/AuthLabel"
+        android:text="@string/date_of_birth_label"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toBottomOf="@id/genderTextView" />
+
+    <EditText
+        android:id="@+id/signUpDateOfBirthEditText"
+        style="@style/AuthEditText"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:inputType="date"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintBottom_toBottomOf="@id/dateOfBirthTextView"
+        app:layout_constraintStart_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toTopOf="@id/dateOfBirthTextView" />
+
+    <Button
+        android:id="@+id/signUpSubmitButton"
+        style="@style/AuthButton"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_big"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateOfBirthTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

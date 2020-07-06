@@ -1,0 +1,72 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AuthLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_normal</item>
+        <item name="android:layout_marginEnd">@dimen/half_margin_between_label_and_input</item>
+    </style>
+
+    <style name="AuthEditText">
+        <item name="android:inputType">text</item>
+        <item name="android:background">@android:drawable/editbox_background_normal</item>
+        <item name="android:layout_width">@dimen/input_field_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/half_margin_between_label_and_input
+        </item>
+    </style>
+
+    <style name="AuthButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:backgroundTint">@color/colorPrimaryDark</item>
+        <item name="android:layout_width">@dimen/input_field_width</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextApp">
+        <item name="android:textSize">@dimen/text_normal_size</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TextApp.AuthTitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_bigger_size</item>
+    </style>
+
+    <style name="TextApp.BigRegular">
+        <item name="android:textSize">@dimen/text_big_size</item>
+    </style>
+
+    <style name="TextApp.Small">
+        <item name="android:textSize">@dimen/text_tiny_size</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TextApp.Money">
+        <item name="android:textSize">@dimen/text_normal_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextApp.Money.Positive">
+        <item name="android:textColor">@color/colorPositive</item>
+    </style>
+
+    <style name="TextApp.Money.Negative">
+        <item name="android:textColor">@color/colorNegative</item>
+    </style>
+
+</resources>

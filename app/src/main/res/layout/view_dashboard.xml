@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_xxxx_smallest">
+
+    <RelativeLayout
+        android:id="@+id/dashboardItemCircleLayout"
+        android:layout_width="@dimen/circle_size"
+        android:layout_height="@dimen/circle_size"
+        android:layout_marginTop="@dimen/margin_xxx_small"
+        android:background="@drawable/circle_dashboard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/dashboardItemCircleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/transactions_item_date"
+            android:textAppearance="@style/TextApp.BigRegular"
+            android:textStyle="normal"
+            tools:text="C" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/dashboardItemCategoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:textAppearance="@style/TextApp.BigRegular"
+        app:layout_constraintBottom_toBottomOf="@id/dashboardItemCircleLayout"
+        app:layout_constraintStart_toEndOf="@id/dashboardItemCircleLayout"
+        app:layout_constraintTop_toTopOf="@id/dashboardItemCircleLayout"
+        tools:text="Grocery" />
+
+    <TextView
+        android:id="@+id/dashboardItemDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintStart_toStartOf="@id/dashboardItemCategoryTextView"
+        app:layout_constraintTop_toBottomOf="@id/dashboardItemCategoryTextView"
+        tools:text=" - July: 123.32" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

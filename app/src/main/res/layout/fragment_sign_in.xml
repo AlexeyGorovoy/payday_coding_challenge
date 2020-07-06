@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_normal">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/AuthLabel"
+        android:text="@string/sign_in_title_label"
+        android:textAppearance="@style/TextApp.AuthTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/horizontalGuideLine" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        style="@style/AuthLabel"
+        android:text="@string/email_label"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+    <EditText
+        android:id="@+id/signInEmailEditText"
+        style="@style/AuthEditText"
+        android:inputType="textEmailAddress"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintBottom_toBottomOf="@id/emailTextView"
+        app:layout_constraintStart_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toTopOf="@id/emailTextView"
+        tools:text="example@email.com" />
+
+    <TextView
+        android:id="@+id/passwordTextView"
+        style="@style/AuthLabel"
+        android:text="@string/password_label"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toBottomOf="@id/emailTextView" />
+
+    <EditText
+        android:id="@+id/signInPasswordEditText"
+        style="@style/AuthEditText"
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextApp"
+        app:layout_constraintBottom_toBottomOf="@id/passwordTextView"
+        app:layout_constraintStart_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toTopOf="@id/passwordTextView"
+        tools:text="password" />
+
+    <Button
+        android:id="@+id/signInRegisterButton"
+        style="@style/AuthButton"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/half_margin_between_label_and_input"
+        android:layout_marginTop="@dimen/margin_big"
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toBottomOf="@id/passwordTextView" />
+
+    <Button
+        android:id="@+id/signInSubmitButton"
+        style="@style/AuthButton"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/half_margin_between_label_and_input"
+        android:text="@string/submit"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toTopOf="@id/signInRegisterButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">PayDayBankTestTask</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_transactions">Transactions</string>
+    <string name="title_activity_information">Information</string>
+
+    <!--    Sign Up-->
+    <string name="sign_up_title_label">Sign up</string>
+    <string name="sign_in_title_label">Sign in</string>
+    <string name="first_name_label">First Name</string>
+    <string name="last_name_label">Last Name</string>
+    <string name="phone_number_label">Phone Number</string>
+    <string name="email_label">EMail</string>
+    <string name="password_label">Password</string>
+    <string name="confirm_password_label">Confirm password</string>
+    <string name="gender_male_label">Male</string>
+    <string name="date_of_birth_label">Date of birth</string>
+    <string name="submit">Submit</string>
+    <string name="register">Register</string>
+
+    <!--    HTTP code-->
+    <string name="http_code_404_sign_in">User is not registered</string>
+    <string name="http_code_500">Internal server error</string>
+
+    <!--    Validation-->
+    <string name="not_valid_email">The E-Mail is not valid</string>
+    <string name="not_valid_password">The password has to contain more than 6 symbols</string>
+    <string name="not_valid_first_name">The first name is empty</string>
+    <string name="not_valid_last_name">The last name is empty</string>
+    <string name="not_valid_phone">The phone number is not valid</string>
+    <string name="not_confirmed">The password is not confirmed</string>
+    <string name="not_valid_date_of_birth">The date of birth should be specified</string>
+
+    <!--    Information-->
+    <string name="transactions_item_date">Date: %s</string>
+    <string name="transactions_item_amount">%.2f</string>
+    <string name="transactions_item_description">Category: %s \nAccount: %s"</string>
+
+    <!--    Dashboard-->
+    <string name="dashboard_item_description_at_month">\u2022</string>
+    <string name="dashboard_item_description_amount">: </string>
+
+    <!--    Month Spinner-->
+    <string name="last_select_month">Select period</string>
+    <string name="last_three_month">Last 3 months</string>
+    <string name="last_six_month">Last 6 months</string>
+    <string name="last_nine_month">Last 9 months</string>
+    <string name="last_year">Last year</string>
+    <string name="last_year_and_half">Last 1.5 year</string>
+    <string name="last_two_years">Last 2 years</string>
+
+    <!--    Progress dialog-->
+    <string name="loading_content_description">Logo</string>
+    <string name="loading">Loading… Please wait</string>
+
+</resources>

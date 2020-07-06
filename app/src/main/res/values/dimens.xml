@@ -1,0 +1,37 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--    Layout-->
+    <dimen name="constraint_to_proxy">0dp</dimen>
+
+    <!--Margins and paddings-->
+    <dimen name="margin_big">18dp</dimen>
+    <dimen name="margin_normal">14dp</dimen>
+    <dimen name="margin_small">12dp</dimen>
+    <dimen name="margin_x_small">10dp</dimen>
+    <dimen name="margin_xx_small">8dp</dimen>
+    <dimen name="margin_xxx_small">6dp</dimen>
+    <dimen name="margin_xxxx_smallest">4dp</dimen>
+
+    <dimen name="half_margin_between_label_and_input">@dimen/margin_xxxx_smallest</dimen>
+
+    <!--Text-->
+    <dimen name="text_bigger_size">16sp</dimen>
+    <dimen name="text_big_size">14sp</dimen>
+    <dimen name="text_normal_size">12sp</dimen>
+    <dimen name="text_small_size">10sp</dimen>
+    <dimen name="text_tiny_size">8sp</dimen>
+
+    <!--    Sign up-->
+    <dimen name="input_field_width">94dp</dimen>
+
+    <!--    Transaction-->
+    <dimen name="circle_size">36dp</dimen>
+
+    <!--    Dashboard-->
+    <dimen name="dashboard_header_divider_height">2dp</dimen>
+    <dimen name="dashboard_spinner_height">48dp</dimen>
+
+</resources>
