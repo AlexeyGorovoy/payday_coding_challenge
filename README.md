@@ -35,7 +35,7 @@ Potentially to be used as the project grows:
 
 <img src="/user-flow.png" alt="architecture" title="architecture" width="740" height="710" />
 
-Also, diagrams for [Sign In](user_stories_flow_diagrams\sign_in.png), [Dashboard](user_stories_flow_diagrams\dashboard.png) and [Transactions](user_stories_flow_diagrams\transactions.png) screens are available.
+Also, diagrams for [Sign In](user_stories_flow_diagrams/sign_in.png), [Dashboard](user_stories_flow_diagrams/dashboard.png) and [Transactions](user_stories_flow_diagrams/transactions.png) screens are available.
 
 ## Technical questions
 
