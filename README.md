@@ -35,6 +35,8 @@ Potentially to be used as the project grows:
 
 <img src="/user-flow.png" alt="architecture" title="architecture" width="740" height="710" />
 
+Also, diagrams for [Sign In](user_stories_flow_diagrams\sign_in.png), [Dashboard](user_stories_flow_diagrams\dashboard.png) and [Transactions](user_stories_flow_diagrams\transactions.png) screens are available.
+
 ## Technical questions
 
 ##### **Q**: How long did you spend on the coding test? What would you add to your solution if you had more time? 
@@ -42,13 +44,14 @@ If you didn't spend much time on the coding test then use this as an opportunity
 
 **A**: First of all, I'd like to point out that the task asks to provide the full architecture for the MVP app, backed up by a demo project demonstrating the selected approach. I do not think that this is feasible to do in the given timeframe of two days, therefore I needed to set my priorities and make some sacrifices.  
 
-From this perspective, I believe that I managed to implement a solid barebones demo app. It can be used to start an MVP app development and has all that is needed to grow it further to a production-ready app.
+From this perspective, I believe that I managed to implement a solid barebones demo app. It can be used to start an MVP app development and has all that is needed to grow it further to a production-ready app. I have also included an example of unit tests (DateUtilsTest.kt) - date utils I use were writed using the TDD approach.
 
 Among the features that I'd suggest for an MVP app (in no particular order) would be:
  - a lock screen with PIN-code and/or biometric (fingerprint) protection;
  - I'm not a UI/UX designer, therefore the app definitely needs major improvements in these areas;
  - I expect the real app would be using the bank's own design guidebook and colors;
  - the currently used cleartext server communication protocol is certainly not suitable for the banking app;
+ - I believe extensive unit and integration testing is a must-have for a banking app;
  - better filtering/grouping capabilities for transactions list;
  - redesign the dashboard to achieve "at a glance" look and feel;
  - ability to add (and maybe order) bank cards and accounts;
